@@ -1,5 +1,13 @@
-# Voice Command
-A Voice Command Application powered by Java and Sphinx4 Speech Recognition Library
+# VoiceCom
+A Simple Voice Command Application powered by Java and Sphinx4 Speech Recognition Library
+
+<h2>Requirements</h2>
+<ul>
+<li>Java 8</li>
+<li>Sphinx4 Pre Alpha 5</li>
+<li>/Windows/<b>Linux OS (Tutorial was made on Fedora 24)</b>
+<li>Netbeans IDE</li>
+</ul>
 
 Please follow this detailed tutorial on how to make your own Voice Command Application using Java and Sphinx4
 
