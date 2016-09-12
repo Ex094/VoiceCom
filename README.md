@@ -1,4 +1,4 @@
-# Voice-Command
+# Voice Command
 A Voice Command Application powered by Java and Sphinx4 Speech Recognition Library
 
 Please follow this detailed tutorial on how to make your own Voice Command Application using Java and Sphinx4
