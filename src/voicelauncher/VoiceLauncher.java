@@ -24,9 +24,9 @@ public class VoiceLauncher {
         // Set path to the acoustic model.
         configuration.setAcousticModelPath("resource:/edu/cmu/sphinx/models/en-us/en-us");
         // Set path to the dictionary.
-        configuration.setDictionaryPath("/home/ex094/Desktop/4220.dic");
+        configuration.setDictionaryPath("YOUR_.DIC_FILE_PATH_HERE");
         // Set path to the language model.
-        configuration.setLanguageModelPath("/home/ex094/Desktop/4220.lm");
+        configuration.setLanguageModelPath("YOUR_.LM_FILE_PATH_HERE");
         
         //Recognizer object, Pass the Configuration object
         LiveSpeechRecognizer recognize = new LiveSpeechRecognizer(configuration);
@@ -45,6 +45,7 @@ public class VoiceLauncher {
             String work = null;
             Process p;
             
+            //Some Extra Commands from my Corpus File
             if(command.equalsIgnoreCase("open search")) {
                 work = "google-chrome http://www.google.com";
             } else if (command.equalsIgnoreCase("new tab")) {
@@ -63,8 +64,6 @@ public class VoiceLauncher {
                 work = "gnome-terminal";
             } else if (command.equalsIgnoreCase("file manager")) {
                 work = "nautilus";
-            } else if (command.equalsIgnoreCase("close file manager")) {
-                work = "xkill -id `xprop -root _NET_ACTIVE_WINDOW | cut -d\\# -f2";
             }
             
             if(work != null) {
